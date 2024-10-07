@@ -7,3 +7,5 @@ import matplotlib.pyplot as plt
 
 laptops = pd.read_csv("laptop_prices.csv", index_col=0)
 print(laptops.head())
+laptops.plot()
+plt.show()
