@@ -6,6 +6,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 laptops = pd.read_csv("laptop_prices.csv", index_col=0)
+
+laptops["Prices_euros"] = laptops["Price_euros"]
 print(laptops.head())
-laptops.plot()
-plt.show()
+
+axs = laptops.plot.area(figsize=(12, 4), subplots=True)
+
+
+

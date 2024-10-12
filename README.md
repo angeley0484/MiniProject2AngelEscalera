@@ -31,7 +31,7 @@ To get you familiar with working with datasets and asking questions, researching
 
 Contributors names and contact info
 
-Angel Escalera
+Angel Escalera /
 Jason Zeller
 
 ## Acknowledgments
@@ -39,5 +39,6 @@ Jason Zeller
 Inspiration, code snippets, etc.
 * [pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/index.html)
 * [matplotlib](https://matplotlib.org/stable/tutorials/pyplot.html)
+* [Kaggle](https://www.kaggle.com/datasets/owm4096/laptop-prices/data)
 
 
