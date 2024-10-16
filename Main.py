@@ -1,9 +1,8 @@
 ### INF601 - Advanced Programming in Python
 ### Angel Escalera
 ### Mini Project 2
-from datetime import datetime
 
-import datetime
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -14,7 +13,8 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-#Extracts data
+
+
 for dirname, _, filenames in os.walk('laptop_prices.csv'):
     for filename in filenames:
         print(os.path.join(dirname, filename))
@@ -63,7 +63,8 @@ plt.xlabel('Company', **font_labels)
 plt.ylabel('Number of Products', **font_labels)
 plt.xticks(rotation=45)
 plt.grid()
-plt.show()
+
+
 
 # Count of products by OS
 os_counts = df['OS'].value_counts()
@@ -76,7 +77,7 @@ plt.xlabel('Operating System',**font_labels)
 plt.ylabel('Number of Products',**font_labels)
 plt.xticks(rotation=45)
 plt.grid()
-plt.show()
+
 
 # Count of products by TypeName
 type_counts = df['TypeName'].value_counts()
@@ -89,7 +90,7 @@ plt.xlabel('Product Type',**font_labels)
 plt.ylabel('Number of Products',**font_labels)
 plt.xticks(rotation=45)
 plt.grid()
-plt.show()
+
 
 # Value counts for Screen
 screen_counts = df['Screen'].value_counts()
@@ -101,7 +102,7 @@ plt.title('Number of Products by Screen',**font_title)
 plt.xlabel('Number of Products',**font_labels)
 plt.ylabel('Screen Type',**font_labels)
 plt.grid()
-plt.show()
+
 
 
 # Value counts for Touchscreen
@@ -114,7 +115,7 @@ plt.title('Number of Products with Touchscreen',**font_title)
 plt.xlabel('Touchscreen',**font_labels)
 plt.ylabel('Number of Products',**font_labels)
 plt.grid()
-plt.show()
+
 
 
 # Value counts for IPSpanel
@@ -127,7 +128,7 @@ plt.title('Number of Products with IPS Panel',**font_title)
 plt.xlabel('IPS Panel',**font_labels)
 plt.ylabel('Number of Products',**font_labels)
 plt.grid()
-plt.show()
+
 
 
 # Value counts for CPU_company
@@ -140,12 +141,14 @@ plt.title('Number of Products by CPU Company', **font_title)
 plt.xlabel('Number of Products',**font_labels)
 plt.ylabel('CPU Company',**font_labels)
 plt.grid()
+
+#Graphs the data
 plt.show()
+plt.savefig(f"Charts/company_counts.png")
 
 
-
-#Used to explore Plotly.express
 '''
+#Used to explore Plotly.express
 df.info()
 df.describe()
 df.duplicated().sum()
